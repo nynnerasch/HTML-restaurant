@@ -4,73 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Menu | Restaurant KEA</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header>
         <h1>Restaurant KEA</h1>
         <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="food-menu.html">Menu</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+            <ul class="navigation">
+                <li><a href="index.html" title="home page">Home</a></li>
+                <li><a href="food-menu.html" title="Menu page" class="i-am-here">Menu</a></li>
+                <li><a href="contact.html" title="contact page">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <main>
-        <article>
-            <header>
-                <h2>Turing Salad</h2>
-            </header>
-            <section>
-                <p>
-                    Sun-dried tomatos and feta cheese on top of a thin layer of lettuce. Choose between our balsamic, mustard or barbecue dressing.
-                </p>
-                <p>
-                    65 kr.
-                </p>
-                <img src="assets/salad.jpg" alt="Picture of the Turing salad">
-            </section>
+    <main id="food-menu-main">
+        <article class="menu-item">
+            <div>
+                <header>
+                    <h2>Turing Salad</h2>
+                </header>
+                    <p>
+                        Sun-dried tomatos and feta cheese on top of a thin layer of lettuce. Choose between our balsamic, mustard or barbecue dressing.
+                    </p>
+                    <p class="bold">
+                        65 kr.
+                    </p>
+            </div>
+                <img src="./img/salad.jpg" alt="Picture of the Turing salad" class="menu-item-img">
         </article>
-        <article>
-            <header>
-                <h2>Pizza Berners-Lee</h2>
-            </header>
-            <section>
-                <p>
-                    Tomato, mozzarella, pepperoni and rucula. Choose between our thin or thick bread base.
-                </p>
-                <p>
-                    80 kr.
-                </p>
-                <img src="assets/pizza.jpg" alt="Picture of the Pizza Berners-Lee">
-            </section>
+        <article class="menu-item">
+            <div>
+                    <header>
+                        <h2>Pizza Berners-Lee</h2>
+                    </header>
+                    <p>
+                        Tomato, mozzarella, pepperoni and rucula. Choose between our thin or thick bread base.
+                    </p>
+                    <p class="price">
+                        80 kr.
+                    </p>
+            </div>
+                <img src="./img/pizza.jpg" alt="Picture of the Pizza Berners-Lee" class="menu-item-img">
         </article>
-        <article>
-            <header>
-                <h2>Codd Hamburger</h2>
-            </header>
-            <section>
-                <p>
-                    High quality meat, lettuce, tomato, onion, bacon, cheese, jalapeÒos and a lot of love. Which sauce do you prefer: BBQ, Dijon or mayonaisse? It comes with French fries and coleslaw salad.                </p>
-                <p>
-                    115 kr.
-                </p>
-                <img src="assets/burger.jpg" alt="Picture of the Codd Hamburger">
-            </section>
+        <article class="menu-item">
+            <div>
+                <header>
+                    <h2>Codd Hamburger</h2>
+                </header>
+                    <p>
+                        High quality meat, lettuce, tomato, onion, bacon, cheese, jalape&ntilde;os and a lot of love. Which sauce do you prefer: BBQ, Dijon or mayonaise? It comes with French fries and coleslaw salad.                
+                    </p>
+                    <p class="price">
+                        115 kr.
+                    </p>
+            </div>
+                <img src="./img/burger.jpg" alt="Picture of the Codd Hamburger" class="menu-item-img">
         </article>
-        <article>
-            <header>
-                <h2>Cerf Cream</h2>
-            </header>
-            <section>
-                <p>
-                    Delightful strawberry icecream topped with actual strawberries. In cone or vase. Multiple toppings available.
-                </p>         
-                <p>
-                    65 kr.
-                </p>
-                <img src="assets/icecream.jpg" alt="Picture of the Cerf Cream">
-            </section>
+        <article class="menu-item">
+            <div>
+                <header>
+                    <h2>Cerf Cream</h2>
+                </header>
+                    <p>
+                        Delightful strawberry icecream topped with actual strawberries. In cone or vase. Multiple toppings available.
+                    </p>         
+                    <p class="price">
+                        65 kr.
+                    </p>
+            </div>
+                <img src="./img/icecream.jpg" alt="Cerf Cream" class="menu-item-img">
         </article>
     </main>
     <footer>

@@ -4,57 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Restaurant KEA</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header>
         <h1>Restaurant KEA</h1>
         <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="food-menu.html">Menu</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+            <ul class="navigation">
+                <li><a href="index.html" title="home page">Home</a></li>
+                <li><a href="food-menu.html" title="Menu page">Menu</a></li>
+                <li><a href="contact.html" title="contact page" class="i-am-here">Contact</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <section id="contact-info">
-            <p><i>Guldbergsgade 29N 2200 Copenhagen</i></p>
-            <p><i>Phone no.: 20 82 53 70</i></p>
-            <p><i>E-mail: info@restaurantkea.dk</i></p>
+            <img src="./img/map.jpg" alt="Map to find Restaurant KEA" id="map">
+            <address>
+                <p>Guldbergsgade 29N</p>
+                <p>2200 Copenhagen</p>
+                <p id="phone-no">Phone no.: <a href="tel:20825370" title="phone restaurant KEA"><span class="bold">20 82 53 70</span></a></p>
+                <p>E-mail: <a href="mailto:info@restaurantkea.dk" title="email Restaurant KEA"><span class="bold">info@restaurantkea.dk</span></a></p>
+            </address>
         </section>
-        <section id="map">
-            <img src="assets/map.jpg" alt="Map to find Restaurant KEA">
-        </section>
+
         <section id="contact-form">
-            <form>
+            <form action="mailto:info@restaurantkea.dk" method="POST">
                 <fieldset>
-                    <legend>Contact Form</legend>
-                    <div>
-                        <label for="name">Full name</label>
-                        <input type="text" name="name">
+                    <legend id="form">Contact Form</legend>
+                    <div class="contact-input">
+                        <label for="txtFullname">Full name</label>
+                        <input type="text" name="name" id="txtFullname" required>
                     </div>
-                    <div>
-                        <label for="Phone">Phone no.</label>
-                        <input type="tel" name="Phone">
+                    <div class="contact-input">
+                        <label for="txtPhone">Phone no.</label>
+                        <input type="tel" name="Phone" id="txtPhone" required pattern="[0-9]">
                     </div>
-                    <div>
-                        <label for="email">E-mail</label>
-                        <input type="email" name="email">
+                    <div class="contact-input">
+                        <label for="txtEmail">E-mail</label>
+                        <input type="email" name="email" id="txtEmail" required>
                     </div>
-                    <div>
+                    <div class="contact-input">
                         <label for="persons">Persons</label>
-                        <input type="number" name="persons">
+                        <input type="number" name="persons" id="persons" required min="1" max="20">
                     </div>
-                    <div>
+                    <div class="contact-input">
                         <label for="date-and-time">Date and time</label>
-                        <input type="datetime-local" name="date-and-time">
+                        <input type="datetime-local" name="date-and-time" id="date-and-time" required>
+                    </div>
+                    <div class="contact-input">
+                        <label for="txtInformation">Further information</label><br>
+                        <textarea id="txtInformation"></textarea>
                     </div>
                     <div>
-                        <label for="comment">Further information</label><br>
-                        <textarea name="comment"></textarea>
-                    </div>
-                    <div>
-                        <input type="submit" name="send">
+                        <button type="submit" id="submit">Send</button>
                     </div>
                 </fieldset>
             </form>
